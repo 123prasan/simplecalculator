@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(255, 255, 255); */
+}
+.layout{
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+    height: 480px;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid;
+    /* border-radius:15px; */
+    margin-top: 8px;
+    /* color: rgb(178, 55, 55); */
+    background-color: black;
+    
+}
+.one,.two,.three,.four,.five{
+    display:flex;
+    justify-content: center;
+   
+
+}
+.output{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    font-size: 30px;
+    /* direction: rtl; */
+    /* width: 20px; */
+    background-color: rgb(0, 0, 0);
+    transition-duration: 200s;
+    transition-delay: 0ms;
+
+}
+.output2{
+    transition-duration: 200ms;
+}
+button{
+    font-size: 30px;
+    border: 10px yellow solid;
+}
+button:active{
+    border:pink 10px solid;
+}
+.one>button{
+   height: 60px;
+   width: 60px;
+   display: flex;
+   border-radius: 90px;
+
+   justify-content: center;
+   align-items: center;
+   margin:8px;
+   border: none;
+}
+.two>button{
+    height: 60px;
+   width: 60px;
+   display: flex;
+   border-radius: 90px;
+   background-color: #f1f1f1e6;
+   justify-content: center;
+   align-items: center;
+   margin:8px;
+   border: none;
+   
+}
+.three>button{
+    height: 60px;
+   width: 60px;
+   display: flex;
+   border-radius: 90px;
+   background-color: #f1f1f1e6;
+   justify-content: center;
+   align-items: center;
+   margin:8px;
+   border: none;
+   
+}
+.four>button{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    border-radius: 90px;
+    background-color: #f1f1f1e6;
+    justify-content: center;
+    align-items: center;
+    margin:8px;
+    border: none;
+}
+.five>button{
+    height: 60px;
+   width: 60px;
+   display: flex;
+   border-radius: 90px;
+   background-color: #f1f1f1e6;
+   justify-content: center;
+   align-items: center;
+   margin:8px;
+   border: none;
+}
