@@ -1,7 +1,9 @@
 
-let output=document.querySelector(".output");
+
+let output=document.getElementById("out")
 let output2=document.querySelector(".output2");
-// for(let i=)
+
+// for(let i=
 document.querySelectorAll("button").forEach(function(button){
   button.addEventListener("click",function(event){
     button.style.border="black solid";
@@ -12,7 +14,7 @@ document.querySelectorAll("button").forEach(function(button){
       if(r==true){
         if(['*','-','+','/','%','.'].includes(event.target.getAttribute("name"))){
           if(!['*','-','+','/','%','.'].includes(output.value[output.value.length-1])){
-            console.log(output.scrollIntoView);
+         
             output.value=output.value+event.target.getAttribute("name");
           }
         }else{
@@ -38,7 +40,12 @@ function result(){
   
   try{
     let temp=output.value;
-    let result=eval(output.value);
+    // console.log(temp);
+    // let result=eval(temp);
+    let result = math.evaluate(temp);
+
+
+
     change();
     output.value=result;
     changevalue(temp);
@@ -50,11 +57,14 @@ function result(){
 }
 //changing the height out input tag2
 function change(){
- 
-      output.style.height="22px";
+  // console.log("working")
+  output.style.fontSize = "10px";
+      output.style.height="80px";
       output2.style.height="65px";
+   
       // output.style.height="10px";
-      output.style.fontSize="15px";
+    
+
       output2.style.fontSize="35px"
      
 }
@@ -66,9 +76,9 @@ function changevalue(temp){
 
 //changing the height out input tag2
 function change2(){
-  output.value=0;
-  output.style.fontSize="30px";
-  output.style.height="65px";
+  output.value=null;
+  output.style.fontSize="25px";
+  output.style.height="60px";
   output2.style.fontSize="0px"
   output2.style.height="0px"
   output2.value=0;
